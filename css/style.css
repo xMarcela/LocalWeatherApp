@@ -1,0 +1,154 @@
+:root {
+    --clr-primary: #C4C4C4;
+    --clr-bgbox50: rgba(196, 196, 196, 50%);
+
+    --font-clr: #040105;
+}
+
+
+body {
+    background: var(--clr-primary);
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: var(--font-clr);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--font-clr);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+li::first-letter {
+    text-transform: capitalize;
+}
+
+.weather-app-container {
+    display: block;
+    margin: auto;
+    max-width: 700px;
+    width: 50%;
+    background: var(--clr-bgbox50);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.form-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-button,
+.search-button {
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 18px;
+    margin: 8px;
+    background: rgba(196, 196, 196, );
+    font-size: 400;
+    font-family: inherit;
+}
+
+.input-button:hover,
+.search-button:hover {
+    background: rgb(181, 180, 180);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+
+.weather-app {
+    background: rgba(196, 196, 196, 50%);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: 1em;
+}
+
+.weather-forecast {
+    background: rgba(196, 196, 196, 20%);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weather-temperature .units {
+    position: relative;
+    font-size: 16px;
+    top: -34px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weatherSpace {
+    background-color: #7b7a7c;
+}
+
+.overview {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.overview h1 {
+    text-align: center;
+}
+
+.events-program .event-scroller {
+    display: flex;
+    max-width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    grid-auto-columns: 23%;
+    gap: 2em;
+}
+
+.event-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.event-scroller .eventCard {
+    position: relative;
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 20px;
+    background: 10em;
+}
+
+.event-cover {
+    width: 200px;
+    height: 150px;
+}
