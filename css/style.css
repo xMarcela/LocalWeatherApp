@@ -93,12 +93,10 @@ li::first-letter {
 }
 
 .weather-forecast {
-    background: rgba(196, 196, 196, 20%);
-    padding: 2em;
-    border-radius: 30px;
+    padding: 10px;
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .weather-temperature .units {
@@ -113,7 +111,9 @@ li::first-letter {
 }
 
 .weatherSpace {
-    background-color: #7b7a7c;
+    background: rgba(196, 196, 196, 50%);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .overview {
@@ -124,6 +124,16 @@ li::first-letter {
 
 .overview h1 {
     text-align: center;
+}
+
+.events-program {
+    padding: 10px;
+    margin: 10px;
+}
+
+.events-program h2 {
+    text-align: center;
+    padding: 10px;
 }
 
 .events-program .event-scroller {
@@ -151,4 +161,5 @@ li::first-letter {
 .event-cover {
     width: 200px;
     height: 150px;
+    border-radius: 20px;
 }
