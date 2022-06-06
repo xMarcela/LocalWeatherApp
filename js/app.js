@@ -24,14 +24,11 @@ registerServiceWorker();
 const unsplashKey = 'uV_hCkvT1PJ2ztuDuinu1mWtZ6t4yKr7YhokjyRqF2Q'
 
 async function getImage(city, weather) {
-
     var query = `${city} ${weather}`
     const url = `https://api.unsplash.com/search/photos?query=${query}&client_id=${unsplashKey}`;
 
-
     const response = await fetch(url);
     const image = await response.json();
-
     const back = image.results[0].urls.regular;
 
     const container = document.querySelector('.container');
@@ -114,7 +111,6 @@ function search(city) {
     var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature);
     getImage(city, 'sunny');
-
 }
 
 function handleSubmit(event) {
@@ -132,12 +128,9 @@ search("Oslo");
 const tmKey = 'AllGA1UdHqmhLwQMpfz1OG5MhedGWG2a';
 
 async function getEvents(city) {
-    console.log(city)
-
     const tmUrl = `https://app.ticketmaster.com/discovery/v2/events.json?city=[${city}]&apikey=${tmKey}`;
     const response = await fetch(tmUrl);
     const results = await response.json();
-
     const events = results._embedded.events;
 
     events.forEach(event => {
