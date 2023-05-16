@@ -9,6 +9,7 @@
 body {
     background: var(--clr-primary);
     margin: 0;
+
 }
 
 .container {
@@ -49,12 +50,28 @@ li::first-letter {
 
 .weather-app-container {
     display: block;
-    margin: auto;
+    margin: 100px auto;
     max-width: 700px;
     width: 50%;
     background: var(--clr-bgbox50);
     padding: 10px;
     border-radius: 8px;
+}
+
+.weather-app {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    outline: 1px solid pink;
+}
+
+.weather-app {
+    background: rgba(223, 221, 221, 0.7);
+    padding: 2em;
+    border-radius: 30px;
+    margin: 1em;
 }
 
 .form-search {
@@ -83,14 +100,7 @@ li::first-letter {
     color: white;
 }
 
-.weather-app {
-    background: rgba(196, 196, 196, 50%);
-    padding: 2em;
-    border-radius: 30px;
-    width: 100%;
-    max-width: 500px;
-    margin: 1em;
-}
+
 
 .weather-forecast {
     padding: 10px;
@@ -99,19 +109,27 @@ li::first-letter {
     margin-top: 10px;
 }
 
+/*
 .weather-temperature .units {
     position: relative;
     font-size: 16px;
     top: -34px;
-}
+}*/
 
 .row {
     display: flex;
     justify-content: space-between;
+
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .weatherSpace {
-    background: rgba(196, 196, 196, 50%);
+    background: rgba(223, 221, 221, 0.7);
     padding: 10px;
     border-radius: 20px;
 }
@@ -120,6 +138,8 @@ li::first-letter {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .overview h1 {
@@ -162,4 +182,11 @@ li::first-letter {
     width: 200px;
     height: 150px;
     border-radius: 20px;
+}
+
+.temp {
+
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
 }
