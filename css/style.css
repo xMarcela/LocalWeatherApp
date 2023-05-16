@@ -32,6 +32,7 @@ h1 {
 ul {
     margin: 0;
     padding: 0;
+
 }
 
 li {
@@ -41,7 +42,8 @@ li {
     color: var(--font-clr);
     font-size: 18px;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 20px;
+    padding-bottom: 0.5rem;
 }
 
 li::first-letter {
@@ -64,7 +66,6 @@ li::first-letter {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    outline: 1px solid pink;
 }
 
 .weather-app {
